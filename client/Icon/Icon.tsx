@@ -9,7 +9,7 @@ const sizes = {
 
 type IconTypeProps = {
   type: 'user' | 'emotikon';
-  size: 'sm' | 'md' | 'lg';
+  size: keyof typeof sizes;
 };
 
 const Icon = ({ type, size }: IconTypeProps) => {
